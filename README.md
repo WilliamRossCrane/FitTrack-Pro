@@ -81,6 +81,7 @@ FitTrack Pro is a professional fitness tracking application designed to help use
     └── README.md             # Project documentation
   ```
 ## Data Models
+  ```bash
   User:
     {
       "ID": "unique_identifier",
@@ -97,7 +98,8 @@ FitTrack Pro is a professional fitness tracking application designed to help use
         }
       }
     }
-
+  ```
+  ```bash
   Workout:
     {
       "ID": "unique_identifier",
@@ -112,7 +114,8 @@ FitTrack Pro is a professional fitness tracking application designed to help use
       "RIR": "Reps in Reserve",
       "date": "Date of workout"
     }
-  
+  ```
+  ```bash
   Goal:
     {
       "ID": "unique_identifier",
@@ -122,6 +125,7 @@ FitTrack Pro is a professional fitness tracking application designed to help use
       "date_set": "Date when goal was set",
       "date_achieved": "Date when goal was achieved (if applicable)"
     }
+   ```
 
 ## Installation
   To run FitTrack Pro locally:
