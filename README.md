@@ -26,5 +26,34 @@ FitTrack Pro is a professional fitness tracking application designed to help use
   - Jest with React Testing Library: Used for unit testing and simulating user interactions, ensuring compatibility across mobile and desktop platforms.
 
 ## Features
+**Key Features**
+
+- **Workout Logging**:
+  - Log Details: Track exercise type, sets, reps, weight lifted, RPE (Rate of Perceived Exertion), and RIR (Reps in Reserve) in a clean carousel layout for each training day.
+  - Dynamic Indicators: Show remaining sets and reps for each exercise to monitor real-time progress.
+
+- **Progressive Overload Tracking**:
+  - Automatic Calculations: Highlights improvements in reps, sets, and weight over time, aiding in tracking strength and endurance progress.
+  - Four-Week Visualization: Displays changes across four weeks, making it easy to see gains in performance.
+
+- **Notes Section**:
+  - Dedicated Notes Area: Provides space for personal notes, session feedback, or adjustments for future workouts.
+  - Auto-Save: Ensures notes are saved automatically for a seamless experience.
+
+- **Graphing and Visual Analytics**:
+  - Weekly & Monthly Views: Graphs display metrics such as weight lifting, volume trends, and RPE over time.
+  - Interactive Graphs: Hover over details for precise workout data.
+
+- **Workout Summary Dashboard**:
+  - Daily Overview: Summarizes workout data, including completed sets, average RPE, and a snapshot of notes.
+  - Quick Access: View essential data for each training day within the carousel for easy reference.
+
+**Additional Design Elements**
+
+  - Exercise History View: Collapsible history for each exercise to review past performance quickly.
+  - Goal-Setting Prompts: Prompts to encourage progressive overload adjustments.
+  - Color-Coded Indicators: Visual cues (green for progress, red for regression) provide quick insight into performance.
+  - Quick-Edit Mode: Expand all exercise inputs for a faster, streamlined logging experience.
+  - Warm-Up & Cool-Down Tracking: Optional fields to log additional activities for a balanced workout routine.
 
 ## Project Structure
