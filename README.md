@@ -57,3 +57,93 @@ FitTrack Pro is a professional fitness tracking application designed to help use
   - Warm-Up & Cool-Down Tracking: Optional fields to log additional activities for a balanced workout routine.
 
 ## Project Structure
+  ```bash
+    fitness-tracker/
+    ├── client/               # Front-end code
+    │   ├── src/             
+    │   │   ├── components/   # React components for user interface
+    │   │   ├── pages/        # Pages that represent each view in the app
+    │   │   ├── services/     # API services and utility functions
+    │   │   ├── redux/        # Redux actions and reducers (if needed for state management)
+    │   │   ├── styles/       # Custom CSS files for styling
+    │   │   └── App.js        # Main application component
+    │   └── public/           # Static files like images and icons
+    │
+    ├── server/               # Back-end code
+    │   ├── controllers/      # API request handlers
+    │   ├── models/           # Database models (e.g., User, Workout, Goal)
+    │   ├── routes/           # API routes for handling user and workout data
+    │   ├── middleware/       # Custom middleware (e.g., authentication)
+    │   └── app.js            # Main server setup file
+    │
+    ├── config/               # Configuration files for the app (e.g., database, API keys)
+    ├── tests/                # Unit and integration tests
+    └── README.md             # Project documentation
+  ```
+## Data Models
+  User:
+    {
+      "ID": "unique_identifier",
+      "username": "User's chosen username",
+      "password": "Hashed password",
+      "email": "User's email address",
+      "profile": {
+        "age": "User's age",
+        "weight": "User's weight",
+        "fitness_preferences": {
+          "goal": "Goal type (e.g., muscle_gain, weight_loss)",
+          "exercise_type": "Preferred exercise type",
+          "preferred_workout_length": "Duration of workout"
+        }
+      }
+    }
+
+  Workout:
+    {
+      "ID": "unique_identifier",
+      "user_id": "Foreign key linking to the user",
+      "exercise_type": "Exercise type (e.g., weightlifting, running)",
+      "sets": "Number of sets performed",
+      "reps": "Reps per set",
+      "weight": "Weight lifted (if applicable)",
+      "duration": "Duration for cardio-based exercises",
+      "calories_burned": "Calories burned during session",
+      "RPE": "Rate of Perceived Exertion",
+      "RIR": "Reps in Reserve",
+      "date": "Date of workout"
+    }
+  
+  Goal:
+    {
+      "ID": "unique_identifier",
+      "user_id": "Foreign key linking to the user",
+      "goal_type": "Goal type (e.g., weight loss, muscle gain)",
+      "target_value": "Target value (e.g., target weight, reps)",
+      "date_set": "Date when goal was set",
+      "date_achieved": "Date when goal was achieved (if applicable)"
+    }
+
+## Installation
+  To run FitTrack Pro locally:
+  1. Clone the repository:
+      git clone https://github.com/yourusername/fittrack-pro.git
+  2. Install dependencies:
+      cd fittrack-pro
+      npm install
+  3. Set up the database by creating a MySQL database and running the migrations:
+      mysql -u root -p < database_schema.sql
+  4. Start the development server:
+      npm run dev
+  5. Open the app in your browser:
+      http://localhost:3000
+
+## Contributing
+We welcome contributions to improve FitTrack Pro! Please fork the repository, create a feature branch, and submit a pull request with your changes.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+### Notes:
+1. Replace `yourusername` with your actual GitHub username when setting up the clone URL.
+2. For the database, you’ll need to create `database_schema.sql` to define the necessary tables based on the models (User, Workout, Goal).
+3. You may also want to ensure that `.env` files for database credentials and environment-specific settings are correctly set up.
