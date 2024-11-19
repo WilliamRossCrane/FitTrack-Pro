@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+echo "node_modules/" >> .gitignore
+echo ".env" >> server/.gitignore
