@@ -1,12 +1,17 @@
-const express = require("express");
-const cors = require("cors");
+// server/app.js
+const express = require('express'); // Import express
+const app = express();             // Create an instance of express
+const PORT = 5001;                 // Define the port
 
-const app = express();
-const PORT = 5000;
+// Middleware
+app.use(express.json()); // Parse JSON request bodies
 
-app.use(cors());
-app.use(express.json());
+// Basic Route
+app.get('/', (req, res) => {
+    res.send('Server is running! Welcome to FitTrack Pro.');
+});
 
-app.get("/", (req, res) => res.send("FitTrack Pro API"));
-
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// Start the Server
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});

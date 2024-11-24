@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "dotenv": "^16.4.5",
-    "mysql2": "^3.11.4"
+    "mysql2": "^3.11.4",
+    "react-router-dom": "^7.0.1"
   }
 }

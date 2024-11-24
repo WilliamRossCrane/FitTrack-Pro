@@ -1,10 +1,11 @@
-import React from "react";
-import Home from "./pages/Home";
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     return (
-        <div>
-            <Home />
+        <div className="App">
+            <h1>Welcome to FitTrack Pro!</h1>
+            <p>Your fitness journey starts here.</p>
         </div>
     );
 }
