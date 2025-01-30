@@ -31,8 +31,10 @@ const SearchExercises = () => {
               fontSize: {lg: '20px', xs: '14px'},
               height: '56px',
               position: 'absolute',
+              right: '0'
             }}
           >
+            Search
         </Button>
       </Box>
     </Stack>
